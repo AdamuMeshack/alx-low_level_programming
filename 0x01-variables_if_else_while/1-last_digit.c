@@ -1,10 +1,11 @@
-#include <stdlib.h>
-#include <time.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 /**
  * main - The last digit 
  *
- * Description: This program will assign a random number to the variable n each time is executed
+ * Description: This program will print the last digit of a random number
  *
  * Return: 0
 */
