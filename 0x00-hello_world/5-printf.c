@@ -1,11 +1,11 @@
 #include<stdio.h>
 
 /**
- * main - printing a statement in the function
+ * main - printing the string in the input function
  *
- * description usining the function printf
- * it prints the script using printf
- * Return 0
+ * Discription: usining the function printf
+ *this program prints the content bellow using printf
+ * Return: 0
  */
 int main(void)
 {
