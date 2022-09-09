@@ -1,9 +1,9 @@
 #include<stdio.h>
 
 /**
- * main - print many var types
- * Return: 0
- */
+* main - print many var types
+* Return: 0
+*/
 int main(void)
 {
 	printf("Size of a char: %i byte(s)\n", sizeof(char));
