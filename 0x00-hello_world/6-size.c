@@ -1,13 +1,13 @@
 #include<stdio.h>
 
 /**
- * main - main block
+ * main - print the yje comment in the function
  *
  * Discription: using the main function to print
  * it prints the content bellow
- * Return 0
+ * Return: 0
  */
-int main (void)
+int main(void)
 {
 	printf("Size of a char: %i byte(s)\n", sizeof(char));
 	printf("Size of an int: %i byte(s)\n", sizeof(int));
