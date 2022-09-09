@@ -1,10 +1,10 @@
 #include<stdio.h>
 
 /**
- * main - print the yje comment in the function
+ * main - print many var types
  *
- * Discription: using the main function to print
- * it prints the content bellow
+ * Discription: using the main function to print the content below
+ * 
  * Return: 0
  */
 int main(void)
