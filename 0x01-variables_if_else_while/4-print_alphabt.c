@@ -9,13 +9,14 @@
 int main(void)
 {
 	char low;
-	for (low = 'a' ; low <= 'z' ; low++)
+	for (low = 'a'; low <= 'z'; low++)
 	{
-	if (low != 'e' && low != 'q')
-	{
-		putcher(low);
-	}
+		if (low != 'e' && low != 'q')
+		{
+		putcher(low);	
+		}
 	}
 	putchar('\n');
+	
 	return (0);
 }
