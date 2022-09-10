@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (low != 'e' && low != 'q')
 		{
-		putcher(low);	
+		putchar(low);	
 		}
 	}
 	putchar('\n');
