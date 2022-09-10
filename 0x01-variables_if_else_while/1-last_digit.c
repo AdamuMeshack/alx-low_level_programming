@@ -3,7 +3,7 @@
 #include<time.h>
 
 /**
- * main - The last digit 
+ * main - print the last digit digit in random number
  *
  * Description: This program will print the last digit of a random number
  *
@@ -21,6 +21,5 @@ int main(void)
 	else if (last == 0)
 	printf("Last digit of %d is %d and is 0\n", n is last);
 	else if (last < 6 && last ! == 0)
-        printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
-	return (0);
+        printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);	return (0);
 }
