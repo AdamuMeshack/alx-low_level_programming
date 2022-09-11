@@ -2,24 +2,22 @@
 /*
  * main - Entry point
  *
- * Description: using the main function to print three digit combination
+ * Description: a program that prints all possible different combinations
  *
  * Return: 0 always(success)
  */
-
 int main(void)
 {
 	int c = 0;
 	int d;
 	int e;
 	int f;
-
 	while (c <= 999)
 	{
 		d = (c / 100 + '0');
 		e = (c / 10 % 10 + '0');
 		f = (c % 10 + '0');
-		if ((b < d) && (d < f))
+		if ((d < e) && (e < f))
 		{
 			putchar(d);
 			putchar(e);
