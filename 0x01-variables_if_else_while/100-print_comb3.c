@@ -8,23 +8,26 @@
  */
 int main(void)
 {
-int i, j;
-for (i = 0; i <= 9; i++)
+	int i = 0;
+	int j;
+	int k;
+
+	while (i <= 99)
 	{
-	for (j = 1; j <= 9; j++)
+		j = (i / 10 + '0')
+		k = (i % 10 + '0')
+		if (j < k)
 		{
-		if (j != i)
-		{
-		putchar(i + '0');
-		putchar(j + '0');
-		if (i != 8)
-		{
-		putchar(',');
-		putchar(' ');
+			putchar(j);
+			putchar(k);
+			if (i != 89)
+			{
+				putchar(',');
+				putchar(' ');
 		}
 		}
+		i++;
 	}
-}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
