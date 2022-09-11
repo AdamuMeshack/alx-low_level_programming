@@ -1,27 +1,30 @@
-#include<stdio.h>
-/*
+#include <stdio.h>
+/**
  * main - Entry point
  *
- * Description: a program that prints all possible different combinations
- *
- * Return: 0 always(success)
+ * Description: using the main function
+ * this prints all possible combination
+ *Return: 0
  */
+
 int main(void)
 {
 	int c = 0;
+	int b;
 	int d;
-	int e;
-	int f;
-while (c <= 999)
+	int d;
+
+	while (c <= 999)
 	{
-		d = (c / 100 + '0');
-		e = (c / 10 % 10 + '0');
+		b = (c / 100 + '0');
+		d = (c / 10 % 10 + '0');
 		f = (c % 10 + '0');
-		if ((d < e) && (e < f))
+		if ((b < d) && (d < f))
 		{
+			putchar(b);
 			putchar(d);
-			putchar(e);
 			putchar(f);
+
 			if (c != 789)
 			{
 				putchar(',');
@@ -30,6 +33,9 @@ while (c <= 999)
 		}
 		c++;
 	}
-	putchar('\n);
+	putchar('\n');
 	return (0);
 }
+^c
+:wq
+[3~[3]\
