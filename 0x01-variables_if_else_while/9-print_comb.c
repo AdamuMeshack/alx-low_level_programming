@@ -1,22 +1,22 @@
 #include <stdio.h>
 /**
- * main - Prints a series of numbers with commas
- *
- * Discription: a program that prints all possible combinations
- *
- *  Return: 0 Always (Success);
+ * main - Entry point
+ * Description: A program that prints all possible combination of single digits
+ * Return: 0
  */
 int main(void)
 {
-	int c;
-for (c = 48; c <= 57; c++)
-{
-		putchar(c);
-		if (c != 57)
+	int a;
+
+	for (a = 0; a < 10; a++)
 	{
+		putchar(a + '0');
+
+		if (a != 9)
+		{
 			putchar(',');
-			putcher(' ');
-			}
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
