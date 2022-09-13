@@ -1,4 +1,4 @@
-#include <unistd.h
+#include <unistd.h>
 #include "main.h"
 /**
  * _isalpha - checks whether the passed character is an alphabet (A-Z or a-z)
