@@ -3,12 +3,12 @@
 /**
  * prints_alphabet_x10 - print 10 times the alphabet, in lowercase
  *
- * Description: a function that prints 10 times the alphabet, in lowercase
+ * Description: A program that prints 10 times the alphabet, in lowercase
  * followed by a new line.
  *
  * Return: Exit int function with an int 0
  */
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 {
 	int count = 0;
 	char n;
