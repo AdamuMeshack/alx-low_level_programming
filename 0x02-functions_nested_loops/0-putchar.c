@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - print putcher
- * 
+ *
  * Description: a program that prints _putchar, followed by a new line
  *
  * Return: always 0
