@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * main - check the code
+ * print_alphabet - Entry point
+ * Description:  a function that prints the alphabets
+ * followed by a new line.
  *
- * Description: A function that prints the alphabet, in lowercase,and new line
- *
- * Return: Always 0.
+ * Return: Exit int function with an int 0
 */
-
 void print_alphabet(void)
 {
-	char c;
-for (c = 'a'; c <= 'z'; c++)
+	int aj;
+
+	for (aj = 'a'; aj <= 'z'; aj++)
 	{
-		_putchar(c);
+		_putchar(aj);
 	}
-_putchar('\n');
+	_putchar('\n');
 }
