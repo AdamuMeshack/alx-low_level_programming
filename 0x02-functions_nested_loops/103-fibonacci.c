@@ -1,31 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - main function
- *
- * Return: nothing
+ * main - prints the first 4000000 Fibonacci numbers, starting with 1 and 2
+ * Return: 0
  */
 int main(void)
 {
-	int counter = 2;
+	long int f1 = 1, f2 = 2, sum = f2, tmp;
 
-	float a = 1;
-	float b = a + 1;
-	float c = a + b;
-
-	printf("%.0f, ", a);
-	printf("%.0f, ", b);
-	while (counter < 89)
+	while (f2 < 4000000)
 	{
-		counter++;
-		printf("%.0f", c);
-		a = b;
-		b = c;
-		c = a + b;
-		if (counter < 89)
-		{
-			printf(", ");
-		}
+		tmp = f1 + f2;
+		f1 = f2;
+		f2 = tmp;
+		sum += (f2 % 2 == 0) ? f2 : 0;
 	}
-	printf("\n");
+	printf("%li\n", sum);
 	return (0);
 }
