@@ -1,45 +1,44 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * three_dig - prints the series of characters if i * j is > 100
- * @n: number to analyze
+ * print_times_table - Print the n times table
  *
- * Return: nothing
+ * @n: number times table table (0 < n<= 15)
+ *
+ * Return: no return
  */
-void three_dig(int n)
+void print_times_table(int n)
 {
-	int i, j, product;
-
+	int a, b, op;
 	if (n >= 0 && n <= 15)
 	{
-		for (i = 0; i <= n; i++)
+	for (a = 0; a <= n; a++)
+	{
+	_putchar(48);
+	for (b = 1; b <= n; b++)
+	{
+		op = a * b;
+		_putchar(44);
+		_putchar(32);
+		if (op <= 9)
 		{
-			for (j = 0; j <= n; j++)
-			{
-				product = i * j;
-				if (product > 99)
-				{
-					three_dig(product);
-				}
-				else if (product / 10 > 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(product / 10 + '0');
-					_putchar((product) % 10 + '0');
-				}
-				else if (j != 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(product % 10 + '0');
-				}
-				else
-					_putchar(product % 10 + '0');
-			}
-			_putchar('\n');
+		_putchar(32);
+		_putchar(32);
+		_putchar(op + 48)
 		}
+		else if (op <= 99)
+		{
+		_putchar(32);
+		_putchar((op / 10) + 48);
+		_putchar((op / 10) + 48);
+		}
+		else
+		{
+		_putchar(((op / 100) % 10) + 48);
+		_putchar(((op / 10) % 10) + 48);
+		_putchar(((op % 10) + 48);
+		}
+	}
+	_putchar('\n');
+	}
 	}
 }
