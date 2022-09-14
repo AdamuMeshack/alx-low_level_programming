@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - prints the first 98 Fibonacci numbers, starting with 1 and 2
+ * main - prints the first 4000000 Fibonacci numbers, starting with 1 and 2
  * Return: 0
  */
 int main(void)
 {
 	long int f1 = 1, f2 = 2, sum = f2, tmp;
 
-	while (f2 < 98)
+	while (f2 < 4000000)
 	{
 		tmp = f1 + f2;
 		f1 = f2;
