@@ -8,9 +8,6 @@
 
 int _isupper(int c);
 {
-	char upper;
-	int upper;
-
 	if (upper >= 65 && upper <= 90)
 	{
 		return (1);
