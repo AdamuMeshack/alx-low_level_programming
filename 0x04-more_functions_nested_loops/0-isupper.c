@@ -8,8 +8,15 @@
 
 int _isupper(int c);
 {
-	if ((c >= 'A') && (c <= 'Z'))
+	char upper;
+	int upper;
+
+	if (upper >= 65 && upper <= 90)
+	{
 		return (1);
+	}
 	else
+	{
 		return (0);
+	}
 }
