@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- * reset_to_98 -> a function to update the refrence of a pointer
- * @n: pointer to n to be updated
+ * reset_to_98 -> direct a pointer to an int and changes the value to 98
+ * 
+ * @n: the variable pointing to the integer
+ *
+ * Return: Nothing
  */
 void reset_to_98(int *n);
 {
