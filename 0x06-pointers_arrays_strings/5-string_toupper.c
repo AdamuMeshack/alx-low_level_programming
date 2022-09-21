@@ -6,6 +6,8 @@
  *
  * Return: String
  */
+
+
 char *string_toupper(char *str)
 {
 	int i;
