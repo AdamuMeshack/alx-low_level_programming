@@ -1,44 +1,35 @@
 #include "main.h"
+void print_number(int num);
 
-void print_array_elements(char *str);
 /**
- * main - Prints all arguments it receives
+ * main - Prints the number of arguments passed into it
  *
- * @argc: Length of @argv, integer
+ * @argc: Length of @argv
  *
- * @argv: Array of strings of the arguments of this program
+ * @argv: Array of strings of the programs arguments
  *
- * Return: 0, success
+ * Return: 0, Success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		print_array_elements(argv[i]);
-		_putchar('\n');
-
-	}
+	print_number(--argc);
+	_putchar('\n');
 	return (0);
 }
 
 /**
- * print_array_elements - Prints all char of a string
+ * print_number - prints number with _putchar
  *
- * @str: Pointer to string
+ * @num: inter, number to be printed
  *
  * Return: void
  */
 
-void print_array_elements(char *str)
+void print_number(int num)
 {
-	int i = 0;
+	if (num / 10)
+		print_number(num / 10);
 
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i++;
-	}
+	_putchar(num % 10 + '0');
 }

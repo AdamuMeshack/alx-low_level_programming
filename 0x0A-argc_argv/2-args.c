@@ -1,35 +1,45 @@
 #include "main.h"
 
-int _atoi(char *s);
-int multiply_two_nums(int num1, int num2);
-void print_number(int n);
+void print_array_elements(char *str);
 
 /**
- * main - Entry point
+ * main - Prints all arguments it receives
  *
- * @argc: Length of @argv
+ * @argc: Length of @argv, integer
  *
  * @argv: Array of strings of the arguments of this program
  *
- * Return: 0, Success
+ * Return: 0, success
  */
 
 int main(int argc, char *argv[])
 {
-	if (argc == 3)
+	int i;
+
+	for (i = 0; i < argc; i++)
 	{
-		print_number(multiply_two_nums(_atoi(argv[1]), _atoi(argv[2])));
+		print_array_elements(argv[i]);
 		_putchar('\n');
-		return (0);
 	}
-	else
+
+	return (0);
+}
+
+/**
+ * print_array_elements - Prints all char of a string
+ *
+ * @str: Pointer to string
+ *
+ * Return: void
+ */
+
+void print_array_elements(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
 	{
-		_putchar('E');
-		_putchar('r');
-		_putchar('r');
-		_putchar('o');
-		_putchar('r');
-		_putchar('\n');
-		return (0);
+		_putchar(str[i]);
+		i++;
 	}
 }
