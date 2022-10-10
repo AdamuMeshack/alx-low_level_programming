@@ -1,4 +1,13 @@
-#ifndef ABS_H
-#define ABS_H
-#define ABS(x) ((x) < 0 ? -(x) : (x))
-#endif
+#include <stdio.h>
+
+/**
+ * main - Entry point, prints file name it was compiled from
+ *
+ * Return: 0 (Success)
+ */
+
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
+}
