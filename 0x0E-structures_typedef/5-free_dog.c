@@ -85,7 +85,6 @@ int _strLen(char *str)
 
 void fillMem(char *str, int strLen, char *dest)
 {
-
 	int i;
 
 	for (i = 0; i < strLen; i++)
