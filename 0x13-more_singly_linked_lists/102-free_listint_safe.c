@@ -32,9 +32,7 @@ size_t free_listint_safe(listint_t **h)
 			i++;
 			break;
 		}
-
 	}
-
 	*h = NULL;
 
 	return (i);
