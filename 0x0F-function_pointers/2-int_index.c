@@ -1,24 +1,33 @@
-#include <stdio.h>
 #include "function_pointers.h"
 
 /**
- * array_iterator - Executes a function as a parameter
- * on each element of an array
+ * int_index - Searches for an integer
  *
- * @array: An array of paramters (values) to be passed to @action
+ * @array: An array of integers
  *
- * @size: Size/length of @array
+ * @size: Number of elements in the @array
  *
- * @action: Pointer to a function
+ * @cmp: Pointer to the function to be used to compare values
+ *
+ * Return: Integers, index integer in @array that matches
+ * condition of @cmp was found (SUCCESS) or
+ * -1 if size <= 0 or integer that matches condition of @cmp
+ *  wasn't found in @array or
+ *  NULL if @array || @cmp is NULL
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	size_t i;
+	int i;
 
-	if (!action || !array)
-		return;
+	if (size <= 0 || !array || !cmp)
+		return (-1);
 
 	for (i = 0; i < size; i++)
-		action(array[i]);
+	{
+		if (cmp(array[i]))
+			return (i);
+	}
+
+	return (-1);
 }
